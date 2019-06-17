@@ -182,7 +182,7 @@ export function mountComponent (
 ```
 注意这里有个判断，也就是在组件已经 `mounted` 之后，才会去调用这个钩子函数。
 
-`update` 的执行时机是在`flushSchedulerQueue` 函数调用的时候，它的定义在 `src/core/observer/scheduler.js` 中：
+`updated` 的执行时机是在`flushSchedulerQueue` 函数调用的时候，它的定义在 `src/core/observer/scheduler.js` 中：
 
 ```js
 function flushSchedulerQueue () {
